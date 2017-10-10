@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.coderzpassion.studentfaculty.ui.DatesheetActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        >
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/ll_fiter_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:weightSum="5">
+
+        <Spinner
+            android:id="@+id/datesheet_department_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginRight="2dp"
+            android:layout_weight="3" />
+
+        <Spinner
+            android:id="@+id/datesheet_batch_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/datesheet_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@+id/ll_fiter_options"
+        android:layout_above="@+id/datesheet_add_btn"
+        
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/datesheet_add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="add"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

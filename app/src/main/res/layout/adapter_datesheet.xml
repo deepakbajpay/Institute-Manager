@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:layout_marginTop="8dp"
+    android:weightSum="3"
+    android:background="@drawable/rounded_corner_background">
+
+    <TextView
+        android:id="@+id/datesheet_subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:paddingLeft="4dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/datesheet_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/datesheet_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="4dp"
+        android:gravity="center"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:textSize="16sp" />
+
+</LinearLayout>

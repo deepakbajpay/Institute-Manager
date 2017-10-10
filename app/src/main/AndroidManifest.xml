@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coderzpassion.studentfaculty">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Activity_Faculty_SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Activity_Student_SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Activity_Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Activity_Faculty_Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Activity_Student_Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Activit_Faculty_Marks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Activity_Faculty_Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Activity_Faculty_Announcement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActivityStudentAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActivityStudentMarks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActivityStudentAnnoucement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActivityProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.ActivityAdminHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.ActivityAdminTeacher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.ActivityAdminStudentsAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.ActivityAdminStudentsMarks"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.DatesheetActivity" />
+        <activity android:name=".ui.TImeTableActivity" />
+        <activity android:name=".ui.ActivityViewTeachers" />
+        <activity android:name=".ui.ActivityViewStudent" />
+        <activity android:name=".ui.ActivityHodHome" />
+        <activity android:name=".ui.Activity_CollegeHead_SignUp" />
+        <activity android:name=".ActivityInfo" />
+        <activity android:name=".ui.CollegeHeadInfo"></activity>
+    </application>
+
+</manifest>

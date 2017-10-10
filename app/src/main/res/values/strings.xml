@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Institute Manager</string>
+
+    <string-array name="designation">
+        <item>Select Designation</item>
+        <item>Student</item>
+        <item>Faculty</item>
+        <item>Admin</item>
+        <item>HOD</item>
+        <item>College Head</item>
+    </string-array>
+
+    <string-array name="subjects">
+        <item>Select Subject</item>
+        <item>Math</item>
+        <item>Chemistry</item>
+        <item>Physics</item>
+        <item>Geology</item>
+        <item>Botany</item>
+        <item>History</item>
+    </string-array>
+    <string-array name="departments">
+        <item>Select Department</item>
+        <item>Computer Science</item>
+        <item>Textile</item>
+        <item>Civil</item>
+        <item>Mechanical</item>
+        <item>Electrical</item>
+        <item>Electronics and Communication</item>
+    </string-array>
+
+    <string-array name="batch">
+        <item>Select Batch</item>
+        <item>2k14</item>
+        <item>2k15</item>
+        <item>2k16</item>
+        <item>2k17</item>
+    </string-array>
+</resources>

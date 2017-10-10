@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4A89AA</color>
+    <color name="colorPrimaryDark">#21374B</color>
+    <color name="colorAccent">#BE4248</color>
+    <color name="off_white">#f8fafafa</color>
+    <color name="tile_color_1">#F06060</color>
+    <color name="tile_color_2">#F3B562</color>
+    <color name="tile_color_3">#8CBEB2</color>
+</resources>

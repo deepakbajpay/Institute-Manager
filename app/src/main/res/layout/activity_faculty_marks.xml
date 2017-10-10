@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/ll_fiter_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:weightSum="5">
+
+        <Spinner
+            android:id="@+id/marks_department_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginRight="2dp"
+            android:background="@android:color/white" />
+
+        <Spinner
+            android:id="@+id/marks_batch_spinner"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="2dp"
+            android:background="@android:color/white" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_fiter_options2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/ll_fiter_options">
+        <Spinner
+            android:id="@+id/marks_mst_spinner"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginRight="2dp" />
+        <Spinner
+
+            android:id="@+id/marks_subject_spinner"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/allmarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addmarks"
+        android:layout_below="@+id/ll_fiter_options2">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/addmarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Add Marks"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

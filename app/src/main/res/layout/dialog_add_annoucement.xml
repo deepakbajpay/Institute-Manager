@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:minWidth="400dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Announcement"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/annoucement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Announcement"
+            android:textSize="15sp"
+            android:minLines="7"
+            android:imeOptions="actionDone"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            />
+
+    <Button
+        android:id="@+id/addmarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Add Announcement"
+        android:textColor="@android:color/white"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                />
+
+            <EditText
+                android:id="@+id/et_roll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Roll No / Subject"
+                android:digits="0123456789"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/et_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:digits="1234567890"
+                android:maxLength="10"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
+
+            <Spinner
+                android:id="@+id/spinner_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Department"
+                style="@style/Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
+
+            <Spinner
+                android:id="@+id/spinner_batch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Batch"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:visibility="gone"/>
+
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Update Profile"
+                android:textColor="@android:color/white"
+                android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Cancel"
+                android:textColor="@android:color/white"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

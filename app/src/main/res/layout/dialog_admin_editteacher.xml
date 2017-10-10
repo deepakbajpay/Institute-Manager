@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:minWidth="400dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/teacher_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:hint="Enter Teacher Name"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:popupBackground="@android:color/white"
+        android:spinnerMode="dropdown" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:popupBackground="@android:color/white"
+        android:spinnerMode="dropdown" />
+
+
+    <Button
+        android:id="@+id/addmarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@color/colorPrimary"
+        android:text="Update Teacher"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/colorPrimary"
+        android:text="Cancel"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

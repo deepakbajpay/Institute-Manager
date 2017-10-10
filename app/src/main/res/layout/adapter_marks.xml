@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label_rollno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Roll no :"
+        android:padding="4dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/rollno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:text="1413432"
+        android:padding="4dp"
+
+        android:layout_toRightOf="@+id/label_rollno" />
+
+    <TextView
+        android:id="@+id/txt_mst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="MST-1"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/label_marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Marks :"
+        android:layout_below="@+id/label_rollno"
+        android:padding="4dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignParentLeft="true" />
+
+
+    <TextView
+        android:id="@+id/marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="12/24"
+        android:layout_toRightOf="@+id/label_marks"
+        android:padding="4dp"
+        android:layout_below="@+id/label_rollno"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/label_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Subject"
+        android:padding="4dp"
+        android:layout_below="@+id/label_rollno"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/txt_subject" />
+
+    <TextView
+        android:id="@+id/txt_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/label_rollno"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:text="dummy subject"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:padding="4dp"
+        android:layout_alignParentRight="true" />
+
+
+
+
+</RelativeLayout>
